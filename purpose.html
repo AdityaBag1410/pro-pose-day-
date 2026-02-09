@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Propose Day</title>
+ 
+
+    <style>
+        body {
+            image: url("ba318a1c-378b-4ab7-9deb-8e853adf2f47_360P.jpg");
+            background-size: cover;
+            background-position: center;
+
+        }
+            body {
+            margin: 0;
+            height: 100vh;
+            background: #dcccd7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Comic Sans MS';
+        }
+
+        h1 {
+            color: darkred;
+            margin-bottom: 30px;
+            animation: fade 2s infinite alternate;
+        }
+
+        @keyframes fade {
+            from {opacity: 0.6;}
+            to {opacity: 1;}
+        }
+
+        
+
+        @keyframes bloom {
+            0% {transform: scale(0.7);}
+            100% {transform: scale(1);}
+        }
+
+        /* Ring animation */
+        .ring {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            border: 10px solid rgba(105, 174, 209, 0.8);
+            border-radius: 50%;
+            position: relative;
+            animation: rotate 3s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {transform: rotate(5deg);}
+            to {transform: rotate(360deg);}
+        }
+
+        .diamond {
+            width:20px;
+            height: 20px;
+            background:rgba(94, 30, 221, 0.8);
+            position: absolute;
+            top: -20px;
+            left: 35px;
+            transform: rotate(45deg);
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Happy Propose Day 💍🌹</h1>
+
+    <div class="heart"></div>
+    <div class="ring">
+        <div class="diamond"></div>
+    </div>
+
+</body>
+</html>
